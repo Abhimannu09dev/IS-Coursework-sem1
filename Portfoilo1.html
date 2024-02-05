@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Description" content="Printer selling website">
+    <meta name="keyword" content="Buy printers">
+    <meta name="author" content="Rohan Upreti">
+    <title>Portfolio</title>
+    <style>
+        .member-info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .member-info img{
+            border-radius: 50%;
+        }
+        .member-info{
+            width: 75%;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px 10px var(--color-shadow),0 10px 15px 0px var(--color-shadow);
+        }
+        :root{
+            /* Defines some repative coustom colors */
+            --color--red:#b0473f;
+            --color--grey:rgb(187, 181, 181);
+            --color--crayn:rgb(233, 250, 250);
+            --color-shadow: rgb(230,230,230);
+        }
+        /* gives body different property like marin etc */
+        body{
+            margin: 0;  
+            font-family: Inter;            
+            background-color: #fafafa;
+        }
+        /* Navigation section starts*/
+        nav{
+            z-index: 99;
+        }
+        .product-list
+        {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid var(--color--grey);
+            padding: 5px;
+        }
+        .display {
+            display: inline-block;
+            position: relative;
+        }
+
+        .display:hover+.product-list
+        {
+            display: block;
+        }
+
+        .product-list:hover {
+            display: block;
+        }
+        .heading{
+            display: flex;
+            border-bottom: 1px solid #b0473f;
+            font-family: sans-serif;
+            width: 100%;
+            position: sticky;
+            align-items: center;
+            height: 75px;
+            top:0px;
+            background-color: white;
+        }
+        .nav-menu{
+            font-size: 18px;
+            position: relative;
+            margin-left:auto;
+            margin-right: 5%;
+        }
+        .nav-menu a
+        {
+            margin-right: 40px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        .nav-menu a:hover 
+        {
+            color: #b0473f;
+            border-radius: 20px;
+        }
+        .logo{
+            width: auto;
+            height: 90px;
+            margin-right: auto;
+        }
+        *{
+            font-family:inter;
+        }
+        .info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 7.5%;
+        }
+        .member{
+            box-shadow: 0 10px 15px 10px var(--color-shadow), 0 10px 15px 0px var(--color-shadow);
+            height: 500px;
+            width: 450px;
+            border-radius: 20px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .member:hover{
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+        .member img{
+            border-radius: 50%;
+        }
+        /* footer style starts */
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .follow{
+            display: flex;
+            justify-items: flex-start;
+        }
+        li{
+            margin: 0%;
+            list-style-type: none;
+        }
+
+        h3{
+            background-color: #fff;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+        .quick{
+            font-family: cursive;
+            margin: 0%;
+        }
+        a{
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+        }
+        li a:hover{
+            color: #b0473f;
+            text-decoration: underline;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="heading">
+        <img class="logo" src="../picture/img/logo/logo.png">
+        <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <div class="display">
+            <a href="product.html" class="display">Products </a>
+                <div class="product-list">
+                        <span>Companies:</span>
+                        <a href="brother.html">Brother </a>
+                        <a href="hp.html">HP</a>
+                        <a href="canon.html">Canon</a>
+                        <a href="epson.html">Epson</a>
+                        <a href="samsung.html">Samsung</a>
+                        <a href="Xerox.html">Xerox</a> 
+                </div>
+        </div>
+        <a href="About.html">About us</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        </div>
+    </nav>
+    <section>
+        <div class="member-info">
+            <img src="./picture/pp/Rohan Upreti.jpg" height="225px" style="margin-top: 25px;">
+            <h1>Name: Rohan Upreti</h1>
+            <h3 style="margin-top: -10px; font-weight: 400;">Group: C7</h3>
+            <h3 style="margin-top: -10px; font-weight: 400;">Education: +2 From Ace Higer Secondary</h3>
+            <h4 style="margin-top: -1px; font-weight: 400; ">Description:Recent +2 graduate with a passion for computers and programming.<br>
+            Eager to learn and contribute to a team.
+            </h4>
+            <table border="1px" style="width: 90%;height: 200px; text-align: center;">
+                <tr>
+                    <td>
+                        Soft skill
+                    </td>
+                    <td>
+                        Technical skill
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Photoshop
+                    </td>
+                    <td>
+                        HTML
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Time Management
+                    </td>
+                    <td>
+                        Microsoft office tools
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Problem Solving
+                    </td>
+                    <td>
+                        CSS
+                    </td>
+                </tr>
+            </table>
+            <a style="color: black;margin-top: 20px;" href="contact.html">Contact Us</a>
+            <a style="text-decoration: none; color: white; border: 1px solid #b0473f; background-color: #b0473f; padding: 10px; border-radius: 20px; margin-top: 20px;" href="./About.html">
+                Previous page</a>
+        </div>
+    </section>
+    <!-- footer code starts from here  -->
+    <br><br><hr>
+    <footer class="footer">
+ 
+     <div>
+         <img src="./picture/logo.png" alt="loog of the website">
+     </div>
+ 
+     <!-- for internal links -->
+     <div>
+         <h3>Quick link</h3>
+             <li>
+                 <a href="About.html" class="quick"> About </a>
+             </li>
+ 
+             <li>
+                 <a href="product.html" class="quick"> Product </a>
+             </li>
+ 
+             <li>
+                 <a href="blog.html" class="quick"> Blog </a>
+             </li>
+ 
+             <li>
+                 <a href="research.html" class="quick"> Research </a>
+             </li>
+ 
+             <li>
+                 <a href="contact.html" class="quick"> Contact Us </a>
+             </li>
+     </div>
+     <!-- for external link  -->
+     <div>
+         <h3>Follow Us</h3>
+         <div class="follow">
+                 <li style="padding: 15px;">
+                     <a href="https://www.facebook.com/">
+                         <img src="./picture/Footer/Facebook.png" alt="facebook link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://twitter.com/">
+                         <img src="./picture/Footer/X.png" alt="x link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://www.instagram.com/accounts/login/?hl=en`">
+                         <img src="./picture/Footer/Instagram.png" alt="instagram link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px">
+                     <a href="https://web.whatsapp.com/">
+                         <img src="./picture/Footer/Whatsapp.png" alt="whatsapp link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://www.telegram.com/">
+                         <img src="./picture/Footer/Telegram.png" alt="Telegram link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://tiktok.com/">
+                         <img src="./picture/Footer/Tiktk.png" alt="tiktok link" width="30px" height="30px">
+                     </a>
+                 </li>
+         </div>
+     </div>
+ </footer>
+</body>
+</html>

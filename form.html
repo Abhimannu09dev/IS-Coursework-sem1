@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place an Order</title>
+    <link rel="stylesheet" type="text/css" href="product.css">
+</head>
+<style>
+    li{
+        list-style-type: none;
+    }
+    h2{
+        text-decoration: underline;
+        font-family: cursive;
+        font-size: 25px;
+        text-align: left;
+    }
+    .buy{
+        font-family: cursive;
+    }
+    .pay{
+        display: flex;
+    }
+    td{
+        padding: 5px;
+    }
+</style>
+<body>
+    <!-- navigation of the page -->
+    <nav class="heading">
+        <img class="logo" src="./picture/logosmall.png">
+        <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <div class="display">
+            <a href="product.html" class="display">Products </a>
+                <div class="product-list">
+                        <li>
+                            Companies:
+                        </li>
+                        <li><a href="brother.html">Brother </a></li>
+                        <li><a href="hp.html">HP</a></li>
+                        <li><a href="canon.html">Canon</a></li>
+                        <li><a href="epson.html">Epson</a></li>
+                        <li><a href="samsung.html">Samsung</a></li>
+                        <li><a href="Xerox.html">Xerox</a> </li>
+                    
+                </div>
+        </div>
+        <a href="about.html">About us</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        </div>
+    </nav>
+    <center>
+    <section>
+        <br>
+        <div class="buy">
+            <!-- for forms in a checkout -->
+            <form name="checkout" style="border: 2px solid #b0473f; padding: 20px; width: 45%; text-align: left;" onsubmit="hello()">
+                <h2>Place an Order</h2>
+                Full Name:<input type="text" name="fullname"><br><br>
+                Address for delivery:<input type="text" name="address"><br><br>
+                Email:<input type="email" name="email" placeholder="name@domain.com"><br><br>
+                Contact no:
+                <input type="text" maxlength="10" name="phoneno" placeholder="9834567801" ><br><br>
+                Quantity:<input type="number" min="1"  max="5" value="1" name="Quantity"><br><br>
+                Payment method: <br>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                            <input type="radio" name="payment">
+                                <img src="./picture/payment method//credit card.png" alt="credit or debit card" width="80 px" height="80px">
+                            </td>
+                            <td>
+                            <input type="radio" name="payment" checked>
+                                <img src="./picture/payment method/cash on delivery.png" alt="cash on delivery" width="80px" height="80px">
+                            </td>
+                            <td>
+                            <input type="radio" name="payment">
+                                <img src="./picture/payment method/online payment.png" alt="Online payment" width="80px" height="80px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Credit or debit card
+                            </td>
+                            <td>
+                                Cash on delivery
+                            </td>
+                            <td>
+                                Online Payment
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <input type="submit" value="Order now" style="width: 100px;">
+
+            </form>
+        </div>
+    </section>
+</center>
+        <!-- footer code starts from here  -->
+    <br><br><hr>
+    <footer class="footer">
+ 
+     <div>
+         <img src="./picture/logo.png" alt="loog of the website">
+     </div>
+ 
+     <!-- for internal links -->
+     <div>
+         <h3>Quick link</h3>
+             <li>
+                 <a href="About.html" class="quick"> About </a>
+             </li>
+ 
+             <li>
+                 <a href="product.html" class="quick"> Product </a>
+             </li>
+ 
+             <li>
+                 <a href="blog.html" class="quick"> Blog </a>
+             </li>
+ 
+             <li>
+                 <a href="research.html" class="quick"> Research </a>
+             </li>
+ 
+             <li>
+                 <a href="contact.html" class="quick"> Contact Us </a>
+             </li>
+     </div>
+     <!-- for external link  -->
+     <div>
+         <h3>Follow Us</h3>
+         <div class="follow">
+                 <li style="padding: 15px;">
+                     <a href="https://www.facebook.com/">
+                         <img src="./picture/Footer/Facebook.png" alt="facebook link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://twitter.com/">
+                         <img src="./picture/Footer/X.png" alt="x link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://www.instagram.com/accounts/login/?hl=en`">
+                         <img src="./picture/Footer/Instagram.png" alt="instagram link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px">
+                     <a href="https://web.whatsapp.com/">
+                         <img src="./picture/Footer/Whatsapp.png" alt="whatsapp link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://www.telegram.com/">
+                         <img src="./picture/Footer/Telegram.png" alt="Telegram link" width="30px" height="30px">
+                     </a>
+                 </li>
+ 
+                 <li style="padding: 15px;">
+                     <a href="https://tiktok.com/">
+                         <img src="./picture/Footer/Tiktk.png" alt="tiktok link" width="30px" height="30px">
+                     </a>
+                 </li>
+         </div>
+     </div>
+ </footer>
+</body>
+<script>
+    function hello(){
+        //value entry part
+        var name=document.forms['checkout']['fullname'].value;
+        var Address=document.forms['checkout']['address'].value;
+        var email=document.forms['checkout']['email'].value;
+        var contact=document.forms['checkout']['phoneno'].value;
+        if(name =="" || Address==""  || email=="" || contact=="")
+        {
+            alert("Please fill all the fields.");
+        }
+        else
+        {
+            alert("Thank you for your purchase. Your order will be delivered soon.");
+        } 
+    }
+    
+</script>
+</html>
